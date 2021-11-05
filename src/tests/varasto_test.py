@@ -78,7 +78,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(5)
         self.varasto.ota_varastosta(7)
 
-        self.assertEqual(self.varasto.saldo, 0.0)
+        self.assertEqual(self.varasto.saldo, 0.1)
     
     def test_str_funktio_tulostaa_oikein(self):
         self.varasto.lisaa_varastoon(6)
